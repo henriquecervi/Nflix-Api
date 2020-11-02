@@ -1,8 +1,8 @@
 require "httparty"
 require "factory_bot"
 
-require_relative "database"
-require_relative "factories"
+require_relative "libs/database"
+require_relative "libs/factories"
 require_relative "services/user"
 
 
