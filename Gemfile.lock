@@ -15,6 +15,8 @@ GEM
     e2mmap (0.1.0)
     factory_bot (6.1.0)
       activesupport (>= 5.0.0)
+    faker (2.14.0)
+      i18n (>= 1.6, < 2)
     httparty (0.18.1)
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
@@ -92,6 +94,7 @@ PLATFORMS
 
 DEPENDENCIES
   factory_bot
+  faker
   httparty
   pg
   rspec
