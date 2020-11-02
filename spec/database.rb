@@ -7,6 +7,10 @@ class Database
         @connection = PG.connect(conn)
     end
 
+    def clean_db
+        @connection.exec("DELETE FROM public.users where id > 1;")
+    end
+
     def find_user(email)
         query = "SELECT id, full_name, password, email, created_at, updated_at" \
         " FROM public.users WHERE email = '#{email}';"
